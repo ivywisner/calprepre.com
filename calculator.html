@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can You Bring a Calculator to the California Real Estate Exam? — CalPrep RE</title>
+  <meta name="description" content="The DRE website contradicts itself on calculators. Here's the real answer — and what CA real estate exam math you actually need to know." />
+  <meta property="og:title" content="Can You Bring a Calculator to the California Real Estate Exam?" />
+  <meta property="og:description" content="The DRE's own website says two different things about calculators. Here's what's actually true — and what California real estate exam math you need to know." />
+  <meta property="og:image" content="icon.png" />
+  <link rel="icon" href="icon.png" />
+  <link rel="canonical" href="https://calprepre.com/calculator.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19ZK9BHVGW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-19ZK9BHVGW');
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0F0C29;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-icon { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-name { font-size: 18px; font-weight: 800; color: #ffffff; }
+    .nav-name span { color: #F0A020; }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #ffffff; }
+    .nav-download {
+      background: #F0A020 !important;
+      color: #1A1A2E !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 700 !important;
+    }
+    .nav-download:hover { background: #e09010 !important; }
+
+    /* ── Article Hero ── */
+    .article-hero {
+      background: linear-gradient(135deg, #72C8EA, #6B3FA8, #D96BA0, #F0A020);
+      padding: 72px 32px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(15,12,41,0.40);
+    }
+    .article-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .article-eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #FFD166;
+      background: rgba(255,209,102,0.12);
+      border: 1px solid rgba(255,209,102,0.25);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .article-hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .article-hero h1 span { color: #FFD166; }
+    .article-hero-sub {
+      font-size: clamp(16px, 2.5vw, 19px);
+      color: rgba(255,255,255,0.80);
+      line-height: 1.65;
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+    .hero-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.40);
+    }
+
+    /* ── Answer callout ── */
+    .answer-banner {
+      background: rgba(240,160,32,0.12);
+      border: 1px solid rgba(240,160,32,0.30);
+      border-left: 4px solid #F0A020;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 40px 0 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .answer-banner-icon { font-size: 28px; flex-shrink: 0; }
+    .answer-banner-text { flex: 1; }
+    .answer-banner-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 6px;
+    }
+    .answer-banner-body {
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.65;
+    }
+    .answer-banner-body strong { color: #ffffff; }
+
+    /* ── Big stat callout ── */
+    .stat-callout {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 32px;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .big-stat {
+      text-align: center;
+      flex: 1;
+      max-width: 220px;
+      padding: 0 28px;
+      border-right: 1px solid rgba(255,255,255,0.10);
+    }
+    .big-stat:last-child { border-right: none; }
+    .big-stat-value {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 900;
+      color: #F0A020;
+      line-height: 1;
+    }
+    .big-stat-value.red { color: #F87171; }
+    .big-stat-label {
+      font-size: 13px;
+      color: rgba(255,255,255,0.50);
+      margin-top: 8px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* ── Content layout ── */
+    .article-body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 64px 32px 80px;
+    }
+
+    /* ── Prose ── */
+    .prose h2 {
+      font-size: clamp(22px, 3.5vw, 30px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-top: 56px;
+      margin-bottom: 16px;
+    }
+    .prose h2 span { color: #F0A020; }
+    .prose h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #F0A020;
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+    .prose p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.80;
+      margin-bottom: 18px;
+    }
+    .prose p strong { color: #ffffff; font-weight: 700; }
+    .prose ul {
+      margin-left: 20px;
+      margin-bottom: 18px;
+    }
+    .prose ul li {
+      font-size: 16px;
+      color: rgba(255,255,255,0.70);
+      line-height: 1.75;
+      margin-bottom: 8px;
+    }
+    .prose ul li strong { color: #ffffff; }
+    .prose a { color: #F0A020; }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 10px;
+    }
+
+    /* ── Quote block ── */
+    .quote-block {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-left: 4px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .quote-block.conflict { border-left-color: #F87171; }
+    .quote-block.confirm { border-left-color: #4ADE80; }
+    .quote-source {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 10px;
+    }
+    .quote-source.red { color: #F87171; }
+    .quote-source.green { color: #4ADE80; }
+    .quote-text {
+      font-size: 15px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.70;
+      font-style: italic;
+    }
+    .quote-text strong { color: #ffffff; font-style: normal; }
+
+    /* ── Conflict visual ── */
+    .conflict-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .conflict-card {
+      border-radius: 14px;
+      padding: 20px 22px;
+    }
+    .conflict-card.says-yes {
+      background: rgba(248,113,113,0.08);
+      border: 1px solid rgba(248,113,113,0.25);
+    }
+    .conflict-card.says-no {
+      background: rgba(74,222,128,0.08);
+      border: 1px solid rgba(74,222,128,0.25);
+    }
+    .conflict-card-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .conflict-card.says-yes .conflict-card-label { color: #F87171; }
+    .conflict-card.says-no .conflict-card-label { color: #4ADE80; }
+    .conflict-card-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.80);
+      margin-bottom: 8px;
+    }
+    .conflict-card-body {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.60;
+    }
+
+    /* ── Callout ── */
+    .callout {
+      background: rgba(240,160,32,0.08);
+      border: 1px solid rgba(240,160,32,0.20);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin: 32px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .callout-icon { font-size: 24px; flex-shrink: 0; }
+    .callout p { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.70; margin: 0; }
+    .callout p strong { color: #ffffff; }
+
+    /* ── Formulas table ── */
+    .formula-grid {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 32px;
+      margin: 32px 0;
+    }
+    .formula-grid-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #F0A020;
+      margin-bottom: 24px;
+    }
+    .formula-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      gap: 16px;
+    }
+    .formula-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .formula-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      flex: 1;
+    }
+    .formula-eq {
+      font-size: 14px;
+      color: #F0A020;
+      font-weight: 600;
+      font-family: 'SF Mono', 'Courier New', monospace;
+      text-align: right;
+      flex: 1;
+    }
+
+    /* ── Source note ── */
+    .source-note {
+      font-size: 12px !important;
+      color: rgba(255,255,255,0.28) !important;
+      margin-top: 20px !important;
+      margin-bottom: 0 !important;
+    }
+    .source-note a { color: rgba(255,255,255,0.40) !important; }
+
+    /* ── Bear CTA ── */
+    .bear-cta {
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      padding: 64px 32px;
+    }
+    .bear-cta img { width: 100px; margin-bottom: 20px; }
+    .bear-cta h2 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .bear-cta p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.58);
+      max-width: 500px;
+      margin: 0 auto 28px;
+      line-height: 1.65;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #F0A020;
+      color: #1A1A2E;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #e09010; }
+    .hero-note {
+      font-size: 13px !important;
+      color: rgba(255,255,255,0.30) !important;
+      margin-top: 14px !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.80); }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+    @media (max-width: 600px) {
+      nav { padding: 12px 20px; }
+      .nav-links a:not(.nav-download) { display: none; }
+      .stat-callout { gap: 0; padding: 28px 16px; }
+      .big-stat { padding: 0 12px; }
+      .article-body { padding: 48px 20px 64px; }
+      .conflict-wrapper { grid-template-columns: 1fr; }
+      .formula-row { flex-direction: column; gap: 4px; }
+      .formula-eq { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="/">
+      <img class="nav-icon" src="icon.png" alt="CalPrep RE" />
+      <span class="nav-name">CalPrep <span>RE</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="guides.html">Study Guides</a>
+      <a href="support.html">Support</a>
+      <a href="https://apps.apple.com/us/app/calprep-re/id6763944279" class="nav-download" target="_blank">Download Free ↓</a>
+    </div>
+  </nav>
+
+  <!-- Article Hero -->
+  <div class="article-hero">
+    <div class="article-hero-content">
+      <div class="article-eyebrow">DRE Policy · Exam Day Tips</div>
+      <h1>Can You Bring a Calculator to the<br /><span>California Real Estate Exam?</span></h1>
+      <p class="article-hero-sub">The DRE's own website contradicts itself on this. Here's the real answer — and what CA real estate exam math you actually need to know.</p>
+      <div class="hero-meta">California DRE Policy · Updated May 2026</div>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <div class="article-body">
+    <div class="prose">
+
+      <div class="answer-banner">
+        <div class="answer-banner-icon">🧮</div>
+        <div class="answer-banner-text">
+          <div class="answer-banner-label">Short Answer</div>
+          <div class="answer-banner-body"><strong>No — you cannot bring a calculator to the California real estate exam.</strong> The testing facility will not provide one either. Despite what one section of the DRE website implies, calculators are explicitly listed as prohibited items at the exam site.</div>
+        </div>
+      </div>
+
+      <div class="section-label">The Contradiction</div>
+      <h2>The DRE Website <span>Says Two Different Things</span></h2>
+
+      <p>If you've done any research on what you can bring to the CA real estate exam, you may have stumbled across something confusing: the California Department of Real Estate's own website appears to contradict itself on calculators — on the same page.</p>
+
+      <p>On one hand, an older regulation listed on the DRE's exam page states that non-programmable calculators are permitted. On the other hand, the same page's current "Examination Control Information" section explicitly lists calculators as a prohibited item. Same URL. Two different answers.</p>
+
+    </div>
+
+    <!-- Conflict Visual -->
+    <div class="conflict-wrapper">
+      <div class="conflict-card says-yes">
+        <div class="conflict-card-label">⚠ Old Regulation Says...</div>
+        <div class="conflict-card-title">Calculators Allowed</div>
+        <div class="conflict-card-body">Regulations of the Real Estate Commissioner (Section 2763) states that "silent, battery-operated, electronic, pocket-sized calculators which are non-programmable" may be used. This regulation also references slide rules — a clue at how outdated it is.</div>
+      </div>
+      <div class="conflict-card says-no">
+        <div class="conflict-card-label">✓ Current Policy Says...</div>
+        <div class="conflict-card-title">Calculators Prohibited</div>
+        <div class="conflict-card-body">The DRE's current "Examination Control Information" section lists calculators explicitly in the prohibited items list, alongside cell phones, laptops, backpacks, and other personal items.</div>
+      </div>
+    </div>
+
+    <div class="prose">
+
+      <p>The regulation citing slide rules is the giveaway — that language predates computerized testing entirely. The California real estate exam is now administered at DRE testing centers on computers, and the current operational policy is clear: <strong>no calculators.</strong></p>
+
+      <div class="section-label">Corroboration</div>
+      <h2>What a CA Real Estate School <span>Says</span></h2>
+
+      <p>Chamberlain Real Estate School's FAQ for the California exam is equally direct on this point:</p>
+
+    </div>
+
+    <div class="quote-block confirm">
+      <div class="quote-source green">Chamberlain Real Estate School — CA Exam FAQ</div>
+      <div class="quote-text">"No. The state testing facility will not provide you with a calculator and you are not permitted to bring your own. The California state exam does not ask any math questions."</div>
+    </div>
+
+    <div class="prose">
+
+      <p>Their FAQ also lists the full set of prohibited items: backpacks, briefcases, suitcases, food, drink, study materials, portable computers, programmable calculators, and cell phones. The pattern is consistent — nothing that could be used to store or retrieve information is permitted in the exam room.</p>
+
+      <div class="section-label">The Nuance</div>
+      <h2>No Calculations — But <span>Math Concepts Still Matter</span></h2>
+
+      <p>Here's where it's worth being more precise than some sources are: the California real estate exam does not ask you to perform math <em>calculations</em> — there's no question where you'll be punching numbers into a calculator to arrive at a dollar figure. That's what makes the calculator ban essentially a non-issue in practice.</p>
+
+      <p>However, <strong>math concepts and formulas absolutely appear on the CA exam.</strong> You won't need to calculate a commission to the penny, but you may be asked to identify the correct formula, interpret a loan-to-value ratio, or understand how capitalization rate relates to property value. The difference is conceptual understanding vs. active number-crunching.</p>
+
+      <div class="callout">
+        <div class="callout-icon">💡</div>
+        <p>Think of it this way: you need to know <em>what</em> the formulas are and <em>how</em> they work — not necessarily <em>how to compute them by hand.</em> The exam tests whether you understand real estate math, not whether you can do long division.</p>
+      </div>
+
+      <div class="section-label">What to Memorize</div>
+      <h2>Key CA Real Estate <span>Math Formulas to Know</span></h2>
+
+      <p>These are the formulas most commonly tested on the California real estate salesperson exam. You won't need a calculator to answer questions about them — but you do need to know what they are and when they apply.</p>
+
+    </div>
+
+    <!-- Formula Grid -->
+    <div class="formula-grid">
+      <div class="formula-grid-title">California Real Estate Exam — Key Math Formulas</div>
+
+      <div class="formula-row">
+        <div class="formula-name">Commission</div>
+        <div class="formula-eq">Sale Price × Commission Rate</div>
+      </div>
+      <div class="formula-row">
+        <div class="formula-name">Loan-to-Value Ratio (LTV)</div>
+        <div class="formula-eq">Loan Amount ÷ Appraised Value</div>
+      </div>
+      <div class="formula-row">
+        <div class="formula-name">Capitalization Rate</div>
+        <div class="formula-eq">NOI ÷ Property Value</div>
+      </div>
+      <div class="formula-row">
+        <div class="formula-name">Net Operating Income (NOI)</div>
+        <div class="formula-eq">Gross Income − Operating Expenses</div>
+      </div>
+      <div class="formula-row">
+        <div class="formula-name">Gross Rent Multiplier (GRM)</div>
+        <div class="formula-eq">Sale Price ÷ Gross Annual Rent</div>
+      </div>
+      <div class="formula-row">
+        <div class="formula-name">Depreciation (Straight-Line)</div>
+        <div class="formula-eq">Cost ÷ Useful Life</div>
+      </div>
+      <div class="formula-row">
+        <div class="formula-name">Equity</div>
+        <div class="formula-eq">Property Value − Loan Balance</div>
+      </div>
+    </div>
+
+    <div class="prose">
+
+      <div class="section-label">The Bottom Line</div>
+      <h2>Leave the Calculator <span>at Home</span></h2>
+
+      <p>Do not bring a calculator to your California real estate exam. The current DRE policy is clear — calculators are on the prohibited items list — even if an outdated regulation on the same page suggests otherwise. You won't need one anyway. The exam tests real estate concepts, not arithmetic.</p>
+
+      <p>What you should do instead is make sure you have the key math formulas memorized well enough to recognize them and apply them conceptually. That's what the CA exam actually tests — and it's a much more achievable goal than learning to crunch numbers by hand.</p>
+
+      <p class="source-note">Sources: <a href="https://dre.ca.gov/examinees/TakingExam.html" target="_blank">California DRE — Taking the Exam</a> · <a href="https://reschool.com/resources/resources-faq/" target="_blank">Chamberlain Real Estate School — CA Exam FAQ</a></p>
+
+    </div>
+  </div>
+
+  <!-- Bear CTA -->
+  <div class="bear-cta">
+    <img src="bear-waving.png" alt="CalPrep RE" />
+    <h2>Practice Real CA DRE Exam Questions 🐻</h2>
+    <p>1,900+ California real estate exam practice questions — including math concepts — organized by topic. Free to start.</p>
+    <a class="btn-primary" href="https://apps.apple.com/us/app/calprep-re/id6763944279" target="_blank">
+      ⬇ Download CalPrep RE — Free
+    </a>
+    <p class="hero-note">Free to start · No credit card · iOS · Built for the CA DRE exam</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="guides.html">Study Guides</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://apps.apple.com/us/app/calprep-re/id6763944279" target="_blank">App Store</a>
+    </div>
+    <div class="footer-copy">© 2026 Ivy Wisner · CalPrep RE · California Real Estate Exam Prep</div>
+  </footer>
+
+</body>
+</html>
