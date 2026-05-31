@@ -247,6 +247,94 @@
       line-height: 1.6;
     }
 
+    /* ── Reviews ── */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .review-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: transform 0.15s, border-color 0.15s, opacity 0.6s ease, transform 0.6s ease;
+    }
+    .review-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .review-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(240,160,32,0.35);
+    }
+    .review-card::before {
+      content: '\201C';
+      position: absolute;
+      top: -10px;
+      right: 16px;
+      font-size: 120px;
+      font-weight: 900;
+      color: rgba(240,160,32,0.08);
+      line-height: 1;
+      pointer-events: none;
+      font-family: Georgia, serif;
+    }
+    .review-stars {
+      font-size: 18px;
+      color: #F0A020;
+      letter-spacing: 2px;
+    }
+    .review-headline {
+      font-size: 15px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.4;
+    }
+    .review-body {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.7;
+      flex: 1;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .review-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6B3FA8, #F0A020);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+    .review-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .review-passed {
+      font-size: 12px;
+      font-weight: 700;
+      color: #4ADE80;
+      margin-top: 2px;
+    }
+
     /* ── Tiers ── */
     .tiers-section { background: rgba(255,255,255,0.025); }
     .tiers-section > div {
@@ -480,6 +568,55 @@
     </div>
   </section>
 
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="section-label">Student Results</div>
+    <h2>Real Students. <span>Real Results.</span></h2>
+    <p>From people who used CalPrep RE to pass the California real estate exam.</p>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-headline">"Passed My California Real Estate Exam on the First Try!"</div>
+        <div class="review-body">I tried several California real estate exam prep apps, and this one was by far the closest to the actual test questions. The wording and style of the practice exams really prepared me for what I saw on exam day. It truly helped me pass on my first try. Highly recommend this app to anyone preparing for the California real estate exam!</div>
+        <div class="review-author">
+          <div class="review-avatar">RN</div>
+          <div>
+            <div class="review-name">Ryan N.</div>
+            <div class="review-passed">✓ Passed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-headline">"Helpful in a Time Crunch"</div>
+        <div class="review-body">I was so nervous about my upcoming exam, but this app actually helped the material stick in my brain. The practice questions are spot-on, and I loved how I was able to review my missed questions. Passed my CA license exam on my first try! This is the best real estate study tool I've found.</div>
+        <div class="review-author">
+          <div class="review-avatar">JV</div>
+          <div>
+            <div class="review-name">Jessie V.</div>
+            <div class="review-passed">✓ Passed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <div class="review-headline">"SOOO Glad This App Exists"</div>
+        <div class="review-body">Much easier to use than other study materials I tried. Being able to study from my phone made a huge difference. I work two jobs and had a limited amount of time to study — I needed something that could prep me in basically 10 days... I couldn't afford a retake, so I needed to get it right on my first attempt. AND I PASSED!!</div>
+        <div class="review-author">
+          <div class="review-avatar">ER</div>
+          <div>
+            <div class="review-name">Emily R.</div>
+            <div class="review-passed">✓ Passed</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Pricing -->
   <div class="tiers-section">
     <div id="pricing">
@@ -564,5 +701,17 @@
     <div class="footer-copy">© 2026 Ivy Wisner · CalPrep RE · California Real Estate Exam Prep</div>
   </footer>
 
+  <script>
+    const reviewCards = document.querySelectorAll('.review-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 150);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reviewCards.forEach(card => observer.observe(card));
+  </script>
 </body>
 </html>
