@@ -335,6 +335,57 @@
       margin-top: 2px;
     }
 
+    /* ── FAQ ── */
+    .faq-section { background: rgba(255,255,255,0.02); }
+    .faq-section > div {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 72px 32px;
+    }
+    .faq-list { display: flex; flex-direction: column; gap: 10px; margin-top: 40px; }
+    details {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    details[open] { border-color: rgba(240,160,32,0.40); }
+    details summary {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      padding: 18px 22px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 400;
+      color: #F0A020;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after {
+      content: '×';
+    }
+    .faq-answer {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.7;
+      padding: 0 22px 18px;
+    }
+    .faq-answer a {
+      color: #F0A020;
+      text-decoration: underline;
+    }
+
     /* ── Tiers ── */
     .tiers-section { background: rgba(255,255,255,0.025); }
     .tiers-section > div {
@@ -616,6 +667,72 @@
 
     </div>
   </section>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <div id="faq">
+      <div class="section-label">FAQ</div>
+      <h2>Common Questions About the <span>CA Real Estate Exam</span></h2>
+      <div class="faq-list">
+
+        <details>
+          <summary>How many questions are on the California real estate exam?</summary>
+          <div class="faq-answer">The California DRE salesperson exam consists of 150 multiple-choice questions. You'll have 3 hours and 15 minutes to complete it.</div>
+        </details>
+
+        <details>
+          <summary>What score do you need to pass the California real estate salesperson exam?</summary>
+          <div class="faq-answer">You need a score of 70% or higher to pass. (Note: the broker exam requires 75%, but CalPrep RE is designed specifically for the salesperson exam.)</div>
+        </details>
+
+        <details>
+          <summary>How hard is the California real estate exam?</summary>
+          <div class="faq-answer">The California real estate exam is widely considered one of the more difficult state exams in the country. Focused, California-specific preparation makes a significant difference — generic national study tools won't cut it.</div>
+        </details>
+
+        <details>
+          <summary>Are there any math calculations on the CA real estate exam?</summary>
+          <div class="faq-answer">No math calculations are required on the California real estate salesperson exam — you won't need to crunch numbers. However, knowing fundamental math formulas is still important because formula-based concepts can appear in question form.</div>
+        </details>
+
+        <details>
+          <summary>Am I allowed to bring a calculator to the CA real estate exam?</summary>
+          <div class="faq-answer">No — calculators are not permitted at the testing center. This surprises many test takers given conflicting information on the official DRE website. <a href="calculator.html">We cleared it up here →</a></div>
+        </details>
+
+        <details>
+          <summary>How many practice questions should I do before the California real estate exam?</summary>
+          <div class="faq-answer">There's no magic number, but the goal is consistent exposure across all topic areas until you're scoring confidently — not just memorizing answers. CalPrep RE tracks your accuracy by topic so you always know which areas still need work before exam day.</div>
+        </details>
+
+        <details>
+          <summary>What accuracy score should I aim for before taking the CA real estate exam?</summary>
+          <div class="faq-answer">We recommend aiming for 85% or higher across all topic areas before scheduling your exam — that's the sweet spot where most test takers feel genuinely confident walking in. Anything consistently above 70% is a good sign you're on track. CalPrep RE tracks your accuracy by topic so you can see exactly where you still need work.</div>
+        </details>
+
+        <details>
+          <summary>How many times can you retake the California real estate exam?</summary>
+          <div class="faq-answer">There's no limit on retakes within the two-year period following your original DRE exam application. If you need more time beyond two years, you'll need to reapply and pay the exam fee again. You can schedule retakes through the DRE's eLicensing system at dre.ca.gov.</div>
+        </details>
+
+        <details>
+          <summary>Is CalPrep RE specific to California?</summary>
+          <div class="faq-answer">Yes — CalPrep RE is built specifically for the California DRE salesperson exam, covering both the California-specific content and the national real estate concepts tested on the CA exam. This is not a generic national app with California content tacked on.</div>
+        </details>
+
+        <details>
+          <summary>How is CalPrep RE different from other California real estate exam prep apps?</summary>
+          <div class="faq-answer">CalPrep RE is a native iOS app built exclusively for the CA exam — not a website, not a national platform. It includes 1,900+ practice questions, a full 150-question timed simulation, flashcards, personalized study plans, and lifetime pricing with no mandatory subscription.</div>
+        </details>
+
+        <details>
+          <summary>Is there a free trial?</summary>
+          <div class="faq-answer">Yes — CalPrep RE is free to download. The free tier includes 3 quiz sessions, 1 practice exam, 5 daily questions, and all flashcards. No credit card or email required.</div>
+        </details>
+
+      </div>
+    </div>
+  </div>
 
   <!-- Pricing -->
   <div class="tiers-section">
