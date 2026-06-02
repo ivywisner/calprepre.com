@@ -403,6 +403,18 @@
       border: 1.5px solid rgba(255,255,255,0.10);
       border-radius: 20px;
       padding: 28px 24px;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s, opacity 0.5s ease;
+    }
+    .tier-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .tier-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(240,160,32,0.40);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.3);
     }
     .tier-card.featured {
       border-color: #F0A020;
@@ -739,7 +751,7 @@
     <div id="pricing">
       <div class="section-label">Pricing</div>
       <h2>Start Free. <span>Upgrade When You're Ready.</span></h2>
-      <p>No subscriptions required. Pro and Premium are one-time purchases — pay once, own it forever.</p>
+      <p style="margin-bottom: 32px;">No subscriptions required. Pro and Premium are one-time purchases — pay once, own it forever.</p>
       <div class="tiers-grid">
 
         <div class="tier-card">
@@ -819,6 +831,7 @@
   </footer>
 
   <script>
+    // Review cards — staggered float in
     const reviewCards = document.querySelectorAll('.review-card');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
@@ -829,6 +842,19 @@
       });
     }, { threshold: 0.15 });
     reviewCards.forEach(card => observer.observe(card));
+
+    // Pricing cards — staggered float in
+    const tierCards = document.querySelectorAll('.tier-card');
+    const tierObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = Array.from(tierCards).indexOf(entry.target);
+          setTimeout(() => entry.target.classList.add('visible'), index * 150);
+          tierObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    tierCards.forEach(card => tierObserver.observe(card));
   </script>
 </body>
 </html>
