@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Does the California Real Estate Exam Have Math? — CalPrep RE</title>
+  <meta name="description" content="Not exactly. The CA real estate exam won't make you crunch numbers — but math formulas absolutely appear. Here's what you actually need to know." />
+  <meta property="og:title" content="Does the California Real Estate Exam Have Math?" />
+  <meta property="og:description" content="Not exactly. No calculator, no long division — but formulas are fair game. Here are the math concepts the CA real estate exam actually tests." />
+  <meta property="og:image" content="icon.png" />
+  <meta property="og:url" content="https://calprepre.com/math.html" />
+  <meta property="og:type" content="article" />
+  <link rel="icon" href="icon.png" />
+  <link rel="canonical" href="https://calprepre.com/math.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19ZK9BHVGW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-19ZK9BHVGW');
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0F0C29;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-icon { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-name { font-size: 18px; font-weight: 800; color: #ffffff; }
+    .nav-name span { color: #F0A020; }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #ffffff; }
+    .nav-download {
+      background: #F0A020 !important;
+      color: #1A1A2E !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 700 !important;
+    }
+    .nav-download:hover { background: #e09010 !important; }
+
+    /* ── Article Hero ── */
+    .article-hero {
+      background: linear-gradient(135deg, #72C8EA, #6B3FA8, #D96BA0, #F0A020);
+      padding: 72px 32px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(15,12,41,0.40);
+    }
+    .article-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .article-eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #FFD166;
+      background: rgba(255,209,102,0.12);
+      border: 1px solid rgba(255,209,102,0.25);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .article-hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .article-hero h1 span { color: #FFD166; }
+    .article-hero-sub {
+      font-size: clamp(16px, 2.5vw, 19px);
+      color: rgba(255,255,255,0.80);
+      line-height: 1.65;
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+    .hero-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.40);
+    }
+
+    /* ── Answer callout ── */
+    .answer-banner {
+      background: rgba(240,160,32,0.12);
+      border: 1px solid rgba(240,160,32,0.30);
+      border-left: 4px solid #F0A020;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 40px 0 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .answer-banner-icon { font-size: 28px; flex-shrink: 0; }
+    .answer-banner-text { flex: 1; }
+    .answer-banner-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 6px;
+    }
+    .answer-banner-body {
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.65;
+    }
+    .answer-banner-body strong { color: #ffffff; }
+
+    /* ── Big stat callout ── */
+    .stat-callout {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 32px;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .big-stat {
+      text-align: center;
+      flex: 1;
+      max-width: 220px;
+      padding: 0 28px;
+      border-right: 1px solid rgba(255,255,255,0.10);
+    }
+    .big-stat:last-child { border-right: none; }
+    .big-stat-value {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 900;
+      color: #F0A020;
+      line-height: 1;
+    }
+    .big-stat-label {
+      font-size: 13px;
+      color: rgba(255,255,255,0.50);
+      margin-top: 8px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* ── Content layout ── */
+    .article-body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 64px 32px 80px;
+    }
+
+    /* ── Prose ── */
+    .prose h2 {
+      font-size: clamp(22px, 3.5vw, 30px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-top: 56px;
+      margin-bottom: 16px;
+    }
+    .prose h2 span { color: #F0A020; }
+    .prose p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.80;
+      margin-bottom: 18px;
+    }
+    .prose p strong { color: #ffffff; font-weight: 700; }
+    .prose a { color: #F0A020; }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 10px;
+    }
+
+    /* ── Callout ── */
+    .callout {
+      background: rgba(240,160,32,0.08);
+      border: 1px solid rgba(240,160,32,0.20);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin: 32px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .callout-icon { font-size: 24px; flex-shrink: 0; }
+    .callout p { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.70; margin: 0; }
+    .callout p strong { color: #ffffff; }
+    .callout a { color: #F0A020; }
+
+    /* ── Related guide link ── */
+    .related-guide {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 32px 0;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s;
+    }
+    .related-guide:hover { border-color: rgba(240,160,32,0.35); }
+    .related-guide-icon { font-size: 24px; flex-shrink: 0; }
+    .related-guide-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.30);
+      margin-bottom: 4px;
+    }
+    .related-guide-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.80);
+    }
+    .related-guide-arrow {
+      margin-left: auto;
+      font-size: 18px;
+      color: #F0A020;
+      flex-shrink: 0;
+    }
+
+    /* ── Formula cards ── */
+    .formula-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .formula-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .formula-card:hover { border-color: rgba(240,160,32,0.30); }
+    .formula-card-header {
+      padding: 22px 26px 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .formula-card-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .formula-card-what {
+      font-size: 13px;
+      color: rgba(255,255,255,0.40);
+      font-weight: 600;
+    }
+    .formula-chip {
+      background: rgba(240,160,32,0.10);
+      border: 1px solid rgba(240,160,32,0.22);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #F0A020;
+      font-family: 'SF Mono', 'Courier New', monospace;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .formula-card-body {
+      padding: 20px 26px 22px;
+    }
+    .formula-card-body p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .formula-card-body p:last-child { margin-bottom: 0; }
+    .formula-card-body p strong { color: #ffffff; }
+    .exam-tip {
+      background: rgba(240,160,32,0.07);
+      border: 1px solid rgba(240,160,32,0.15);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .exam-tip-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 5px;
+    }
+    .exam-tip p {
+      font-size: 13px !important;
+      color: rgba(255,255,255,0.62) !important;
+      line-height: 1.65 !important;
+      margin: 0 !important;
+    }
+    .exam-tip p strong { color: rgba(255,255,255,0.85) !important; }
+
+    /* ── Source note ── */
+    .source-note {
+      font-size: 12px !important;
+      color: rgba(255,255,255,0.28) !important;
+      margin-top: 20px !important;
+      margin-bottom: 0 !important;
+    }
+    .source-note a { color: rgba(255,255,255,0.40) !important; }
+
+    /* ── Bear CTA ── */
+    .bear-cta {
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      padding: 64px 32px;
+    }
+    .bear-cta img { width: 100px; margin-bottom: 20px; }
+    .bear-cta h2 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .bear-cta p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.58);
+      max-width: 500px;
+      margin: 0 auto 28px;
+      line-height: 1.65;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #F0A020;
+      color: #1A1A2E;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #e09010; }
+    .hero-note {
+      font-size: 13px !important;
+      color: rgba(255,255,255,0.30) !important;
+      margin-top: 14px !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.80); }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+    @media (max-width: 600px) {
+      nav { padding: 12px 20px; }
+      .nav-links a:not(.nav-download) { display: none; }
+      .stat-callout { gap: 0; padding: 28px 16px; }
+      .big-stat { padding: 0 12px; }
+      .article-body { padding: 48px 20px 64px; }
+      .formula-card-header { flex-direction: column; gap: 12px; }
+      .formula-chip { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="/">
+      <img class="nav-icon" src="icon.png" alt="CalPrep RE" />
+      <span class="nav-name">CalPrep <span>RE</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="guides.html">Study Guides</a>
+      <a href="support.html">Support</a>
+      <a href="https://apps.apple.com/us/app/calprep-re/id6763944279" class="nav-download" target="_blank">Download Free ↓</a>
+    </div>
+  </nav>
+
+  <!-- Article Hero -->
+  <div class="article-hero">
+    <div class="article-hero-content">
+      <div class="article-eyebrow">DRE Policy · Exam Prep</div>
+      <h1>Does the California Real Estate Exam<br /><span>Have Math?</span></h1>
+      <p class="article-hero-sub">Kind of — but not in the way you're probably dreading. Here's exactly what the CA real estate exam tests when it comes to numbers.</p>
+      <div class="hero-meta">California DRE Salesperson Exam · Updated June 2026</div>
+    </div>
+  </div>
+
+  <!-- Stat Bar -->
+  <div class="stat-callout">
+    <div class="big-stat">
+      <div class="big-stat-value">0</div>
+      <div class="big-stat-label">Calculators allowed at the exam</div>
+    </div>
+    <div class="big-stat">
+      <div class="big-stat-value">10</div>
+      <div class="big-stat-label">Math formulas worth knowing</div>
+    </div>
+    <div class="big-stat">
+      <div class="big-stat-value">150</div>
+      <div class="big-stat-label">Total exam questions</div>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <div class="article-body">
+    <div class="prose">
+
+      <div class="answer-banner">
+        <div class="answer-banner-icon">🔢</div>
+        <div class="answer-banner-text">
+          <div class="answer-banner-label">Short Answer</div>
+          <div class="answer-banner-body"><strong>Not in the way you're worried about.</strong> The California real estate exam won't ask you to crunch numbers by hand or do long division. But math formulas absolutely appear — you need to know what they are, how they work, and when to apply them. Conceptual understanding, not arithmetic.</div>
+        </div>
+      </div>
+
+      <div class="section-label">The Distinction</div>
+      <h2>No Arithmetic. <span>But Formulas Are Fair Game.</span></h2>
+
+      <p>The California real estate exam is administered on a computer at a DRE testing center. You can't bring a calculator, and the testing facility won't provide one. But here's the thing: <strong>you don't need one.</strong> The exam doesn't ask you to calculate a commission down to the cent or work out a proration by hand. That's not what it's testing.</p>
+
+      <p>What it <em>is</em> testing is whether you understand how real estate math works. You need to know the right formula for a given situation, understand what each variable means, and be able to reason through a scenario — even if the numbers are kept simple enough that a calculator isn't required.</p>
+
+      <p>Think of it this way: a question might give you a loan amount and an appraised value and ask for the LTV ratio. That's a formula question. You need to know that LTV = Loan ÷ Value, identify the right numbers, and apply it. The arithmetic itself — dividing 160,000 by 200,000 — is straightforward enough to do mentally.</p>
+
+    </div>
+
+    <a class="related-guide" href="calculator.html">
+      <div class="related-guide-icon">🧮</div>
+      <div>
+        <div class="related-guide-label">Related Guide</div>
+        <div class="related-guide-title">Can You Bring a Calculator to the California Real Estate Exam?</div>
+      </div>
+      <div class="related-guide-arrow">→</div>
+    </a>
+
+    <div class="prose">
+
+      <div class="callout">
+        <div class="callout-icon">💡</div>
+        <p>The math that shows up on the CA exam is the <strong>same handful of formulas</strong> showing up in different scenarios. Once you know them cold, math becomes one of your more reliable areas — not a weak spot.</p>
+      </div>
+
+      <div class="section-label">The Formulas</div>
+      <h2>The Math Formulas <span>the CA Exam Actually Tests</span></h2>
+
+      <p>These are the core formulas the CA real estate exam tests, with what each one means and how it shows up in practice. Learn them in this order — the first few appear most frequently.</p>
+
+    </div>
+
+    <!-- Formula Cards -->
+    <div class="formula-cards">
+
+      <!-- Commission -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Commission</div>
+            <div class="formula-card-what">What a broker earns on a transaction</div>
+          </div>
+          <div class="formula-chip">Sale Price × Commission Rate</div>
+        </div>
+        <div class="formula-card-body">
+          <p>Commission is the fee paid to the brokers involved in a transaction, calculated as a percentage of the sale price. If a home sells for $400,000 at a 5% total commission rate, the total commission is $20,000.</p>
+          <p>Where it gets more involved is <strong>commission splits</strong>. That $20,000 doesn't go to one person — it's split between the listing broker and the selling broker (usually 50/50, but not always). Then each broker splits their share with their agent according to their agreement. The exam may give you the full chain and ask you to find one agent's cut.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Follow the chain without skipping steps. Total commission → listing broker's share → listing agent's split. Don't try to shortcut it. Commission splits are the most common way this gets tested beyond the basic formula.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LTV -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Loan-to-Value Ratio (LTV)</div>
+            <div class="formula-card-what">How much of a property's value is being financed</div>
+          </div>
+          <div class="formula-chip">Loan Amount ÷ Appraised Value × 100</div>
+        </div>
+        <div class="formula-card-body">
+          <p>LTV expresses the loan amount as a percentage of the property's value. Lenders use it to assess risk — a higher LTV means the borrower has less equity and represents more risk to the lender. An LTV above 80% typically triggers a requirement for private mortgage insurance (PMI).</p>
+          <p><strong>Important detail:</strong> when the appraised value and sale price differ, lenders use whichever is <em>lower</em>. If a home appraises at $200,000 but the buyer is paying $210,000, the LTV is calculated on $200,000.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>You'll usually be given two of the three values (loan amount, appraised value, LTV%) and asked to find the third. Also tested conceptually: "which scenario represents the highest lender risk?" Higher LTV = higher risk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOI -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Net Operating Income (NOI)</div>
+            <div class="formula-card-what">A property's annual income after operating costs</div>
+          </div>
+          <div class="formula-chip">Gross Income − Operating Expenses</div>
+        </div>
+        <div class="formula-card-body">
+          <p>NOI is what an income-producing property actually generates after you subtract its operating costs — things like property management, maintenance, insurance, and property taxes. It does <strong>not</strong> include mortgage payments (debt service), which is a common mistake.</p>
+          <p>NOI is often a stepping stone rather than an end destination on exam questions. You'll calculate it first, then use it to find the cap rate or determine property value.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Watch for questions that list expenses and ask you to identify which are operating expenses vs. debt service. Mortgage payments don't reduce NOI. Once you have NOI, you'll typically be plugging it into the cap rate formula next.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cap Rate -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Capitalization Rate (Cap Rate)</div>
+            <div class="formula-card-what">Rate of return on an investment property — the IRV triangle</div>
+          </div>
+          <div class="formula-chip">NOI ÷ Property Value</div>
+        </div>
+        <div class="formula-card-body">
+          <p>Cap rate tells you what percentage return an investor would get on a property if they paid cash. It's calculated as NOI divided by the property's value or sale price. A 7.5% cap rate means the property generates 7.5 cents of income for every dollar of value.</p>
+          <p>The IRV framework is the key to unlocking all three variations of this formula: <strong>I = R × V</strong> (Income = Rate × Value). Rearranged: <strong>R = I ÷ V</strong> (cap rate) and <strong>V = I ÷ R</strong> (property value). Know all three — the exam will give you different combinations.</p>
+          <p>One important relationship to understand: <strong>cap rate and property value move in opposite directions.</strong> A lower cap rate means a more valuable property (investors accept a smaller return for a better asset). A higher cap rate signals more risk or a less desirable property.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Given any two of the three values (NOI, cap rate, property value), find the third. Also tested as concept questions: "An investor wants a higher return — would they prefer a property with a higher or lower cap rate?" Higher.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRM -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Gross Rent Multiplier (GRM)</div>
+            <div class="formula-card-what">A quick valuation shorthand for rental properties</div>
+          </div>
+          <div class="formula-chip">Sale Price ÷ Gross Annual Rent</div>
+        </div>
+        <div class="formula-card-body">
+          <p>GRM is a simple ratio that tells you how many years of gross rental income it would take to equal the property's sale price. A GRM of 10 means the property costs 10 years' worth of rent. It's a rough comparison tool — not as rigorous as cap rate because it doesn't account for expenses.</p>
+          <p>Note that GRM can be calculated using either annual or monthly rent — just be consistent. The exam will specify which one it's using.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Classic format: given two of three values (sale price, annual rent, GRM), find the third. "A property sold for $200,000 and has a GRM of 10 — what is the annual rent?" $200,000 ÷ 10 = $20,000.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property Tax -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Property Tax</div>
+            <div class="formula-card-what">Annual tax on real property based on assessed value</div>
+          </div>
+          <div class="formula-chip">Assessed Value × Tax Rate</div>
+        </div>
+        <div class="formula-card-body">
+          <p>Property taxes are calculated by applying a tax rate to a property's assessed value. The formula is straightforward — the part that trips people up is <strong>millage rates</strong>. A mill is $1 of tax per $1,000 of assessed value, or 0.1%. If the millage rate is 15 mills, the tax rate is 1.5%.</p>
+          <p>To convert mills to a decimal tax rate: divide by 1,000. Then multiply by assessed value to get the annual tax. A $200,000 assessed value at 10 mills = $200,000 × 0.01 = $2,000 annual tax.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>The exam often expresses tax rates in mills specifically to test whether you can convert. Know that <strong>1 mill = $1 per $1,000 of assessed value</strong>. From there it's multiplication.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prorations -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Prorations</div>
+            <div class="formula-card-what">Splitting ongoing costs between buyer and seller at closing</div>
+          </div>
+          <div class="formula-chip">Annual Amount ÷ 365 = Daily Rate</div>
+        </div>
+        <div class="formula-card-body">
+          <p>When a property closes, certain ongoing costs — property taxes, prepaid rent, HOA dues — need to be split fairly between buyer and seller based on who owned the property on which days. That's what proration calculates.</p>
+          <p>The process: take the annual cost, divide by the number of days in the year to get the daily rate, then multiply by the number of days attributed to each party. In California, property tax prorations typically use a <strong>360-day year with 30-day months</strong> rather than the actual calendar. The question will specify the method if it matters — when in doubt, use 360/30.</p>
+          <p>The most common version on the exam involves property taxes: if the seller has already paid a full year of taxes but the buyer is taking over mid-year, the buyer owes the seller a credit for their portion of the year.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Prorations are the most involved math on the CA exam. Read carefully to identify the annual amount, the closing date, and who owes whom. The question will tell you what to find — focus on counting the days correctly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simple Interest -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Simple Interest</div>
+            <div class="formula-card-what">Basic interest on a loan or investment</div>
+          </div>
+          <div class="formula-chip">Principal × Rate × Time</div>
+        </div>
+        <div class="formula-card-body">
+          <p>Simple interest is calculated by multiplying the principal (loan amount) by the annual interest rate by the time period in years. A $100,000 loan at 6% for one year generates $6,000 in interest. For partial years, convert to a decimal (6 months = 0.5 years).</p>
+          <p>This is the most straightforward math formula on the exam. It shows up in basic loan and mortgage scenarios.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Usually given principal, rate, and time — find the interest. Or given interest and rate — find the principal. Watch for time periods that aren't a full year and convert accordingly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equity -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Equity</div>
+            <div class="formula-card-what">The owner's stake in the property</div>
+          </div>
+          <div class="formula-chip">Market Value − Loan Balance</div>
+        </div>
+        <div class="formula-card-body">
+          <p>Equity is simply what a property is worth minus what's owed on it. If a home is worth $350,000 and the owner owes $220,000, their equity is $130,000. It represents the portion of the property value the owner actually owns free and clear.</p>
+          <p>Equity grows in two ways: the property appreciates in value, or the loan balance decreases as payments are made (or both). The exam sometimes asks how equity changes under different scenarios.</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>Usually the simplest math question on the exam — straightforward subtraction. More often tested conceptually: "which action increases a homeowner's equity?" Paying down the mortgage or property appreciation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conversions -->
+      <div class="formula-card">
+        <div class="formula-card-header">
+          <div>
+            <div class="formula-card-name">Area &amp; Acreage Conversions</div>
+            <div class="formula-card-what">Measuring land and property dimensions</div>
+          </div>
+          <div class="formula-chip">1 acre = 43,560 sq ft</div>
+        </div>
+        <div class="formula-card-body">
+          <p>Two things to know here: the area of a rectangle (Length × Width) and the conversion between square feet and acres. <strong>1 acre = 43,560 square feet</strong> — memorize that number.</p>
+          <p>These show up in questions about lot size or land valuation. "A rectangular lot measures 150 ft by 290 ft. How many acres is it?" Multiply the dimensions to get total square footage (43,500 sq ft), then divide by 43,560 to get acres (just under 1 acre).</p>
+          <div class="exam-tip">
+            <div>
+              <div class="exam-tip-label">How It Shows Up</div>
+              <p>You'll be given dimensions and asked to convert to acres, or given acreage and asked about square footage. The number 43,560 is the only conversion you need to have memorized.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /formula-cards -->
+
+    <div class="prose">
+
+      <div class="section-label">The Bottom Line</div>
+      <h2>Math Is Learnable — <span>and the Core Concepts Repeat</span></h2>
+
+      <p>The CA real estate exam math draws from a consistent core. Most of what you'll encounter is a variation of the formulas above — different numbers, different scenarios, same underlying concepts. Get comfortable with these and math stops being the unpredictable part of the exam.</p>
+
+      <p>The formulas that show up most often are commission (especially splits), LTV, cap rate, and GRM. Prorations are the most involved to work through. Equity is the simplest. Prioritize accordingly.</p>
+
+      <p>And for the record: you won't be doing long division in your head at the testing center. The numbers the exam uses are kept clean enough that if you know the formula, the arithmetic takes care of itself.</p>
+
+    </div>
+  </div>
+
+  <!-- Bear CTA -->
+  <div class="bear-cta">
+    <img src="bear-waving.png" alt="CalPrep RE" />
+    <h2>Practice Real CA Math Questions 🐻</h2>
+    <p>1,900+ California DRE practice questions — including math scenarios covering all the formulas above. Free to start.</p>
+    <a class="btn-primary" href="https://apps.apple.com/us/app/calprep-re/id6763944279" target="_blank">
+      ⬇ Download CalPrep RE — Free
+    </a>
+    <p class="hero-note">Free to start · No credit card · iOS · Built for the CA DRE exam</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="guides.html">Study Guides</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://apps.apple.com/us/app/calprep-re/id6763944279" target="_blank">App Store</a>
+    </div>
+    <div class="footer-copy">© 2026 Ivy Wisner · CalPrep RE · California Real Estate Exam Prep</div>
+  </footer>
+
+</body>
+</html>
