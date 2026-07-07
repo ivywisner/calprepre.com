@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free California Real Estate Practice Questions — 20 Exam-Style Questions with Answers — CalPrep RE</title>
+  <meta name="description" content="20 free California real estate exam practice questions with answers and explanations — covering licensing, agency, contracts, disclosures, ownership, finance, and fair housing. No email required." />
+  <meta property="og:title" content="Free California Real Estate Practice Questions (20 with Answers)" />
+  <meta property="og:description" content="20 real CA exam-style questions, answers hidden until you commit. No email, no signup — just find out if you'd pass." />
+  <meta property="og:image" content="icon.png" />
+  <meta property="og:url" content="https://calprepre.com/practice-questions.html" />
+  <meta property="og:type" content="article" />
+  <link rel="icon" href="icon.png" />
+  <link rel="canonical" href="https://calprepre.com/practice-questions.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19ZK9BHVGW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-19ZK9BHVGW');
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0F0C29;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-icon { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-name { font-size: 18px; font-weight: 800; color: #ffffff; }
+    .nav-name span { color: #F0A020; }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #ffffff; }
+    .nav-download {
+      background: #F0A020 !important;
+      color: #1A1A2E !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 700 !important;
+    }
+    .nav-download:hover { background: #e09010 !important; }
+
+    /* ── Article Hero ── */
+    .article-hero {
+      background: linear-gradient(135deg, #72C8EA, #6B3FA8, #D96BA0, #F0A020);
+      padding: 72px 32px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(15,12,41,0.40);
+    }
+    .article-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .article-eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #FFD166;
+      background: rgba(255,209,102,0.12);
+      border: 1px solid rgba(255,209,102,0.25);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .article-hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .article-hero h1 span { color: #FFD166; }
+    .article-hero-sub {
+      font-size: clamp(16px, 2.5vw, 19px);
+      color: rgba(255,255,255,0.80);
+      line-height: 1.65;
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+    .hero-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.40);
+    }
+
+    /* ── Answer callout ── */
+    .answer-banner {
+      background: rgba(240,160,32,0.12);
+      border: 1px solid rgba(240,160,32,0.30);
+      border-left: 4px solid #F0A020;
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 40px 0 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .answer-banner-icon { font-size: 28px; flex-shrink: 0; }
+    .answer-banner-text { flex: 1; }
+    .answer-banner-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 6px;
+    }
+    .answer-banner-body {
+      font-size: 16px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.65;
+    }
+    .answer-banner-body strong { color: #ffffff; }
+
+    /* ── Big stat callout ── */
+    .stat-callout {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 32px;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .big-stat {
+      text-align: center;
+      flex: 1;
+      max-width: 220px;
+      padding: 0 28px;
+      border-right: 1px solid rgba(255,255,255,0.10);
+    }
+    .big-stat:last-child { border-right: none; }
+    .big-stat-value {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 900;
+      color: #F0A020;
+      line-height: 1;
+    }
+    .big-stat-label {
+      font-size: 13px;
+      color: rgba(255,255,255,0.50);
+      margin-top: 8px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    /* ── Content layout ── */
+    .article-body {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 64px 32px 80px;
+    }
+
+    /* ── Prose ── */
+    .prose h2 {
+      font-size: clamp(22px, 3.5vw, 30px);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-top: 56px;
+      margin-bottom: 16px;
+    }
+    .prose h2 span { color: #F0A020; }
+    .prose p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.80;
+      margin-bottom: 18px;
+    }
+    .prose p strong { color: #ffffff; font-weight: 700; }
+    .prose a { color: #F0A020; }
+
+    /* ── Section label ── */
+    .section-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 10px;
+    }
+
+    /* ── Callout ── */
+    .callout {
+      background: rgba(240,160,32,0.08);
+      border: 1px solid rgba(240,160,32,0.20);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin: 32px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .callout-icon { font-size: 24px; flex-shrink: 0; }
+    .callout p { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.70; margin: 0; }
+    .callout p strong { color: #ffffff; }
+    .callout a { color: #F0A020; }
+
+    /* ── Related guide link ── */
+    .related-guide {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 32px 0;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s;
+    }
+    .related-guide:hover { border-color: rgba(240,160,32,0.35); }
+    .related-guide-icon { font-size: 24px; flex-shrink: 0; }
+    .related-guide-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.30);
+      margin-bottom: 4px;
+    }
+    .related-guide-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.80);
+    }
+    .related-guide-arrow {
+      margin-left: auto;
+      font-size: 18px;
+      color: #F0A020;
+      flex-shrink: 0;
+    }
+
+    /* ── Formula cards ── */
+    .formula-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .formula-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .formula-card:hover { border-color: rgba(240,160,32,0.30); }
+    .formula-card-header {
+      padding: 22px 26px 18px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .formula-card-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .formula-card-what {
+      font-size: 13px;
+      color: rgba(255,255,255,0.40);
+      font-weight: 600;
+    }
+    .formula-chip {
+      background: rgba(240,160,32,0.10);
+      border: 1px solid rgba(240,160,32,0.22);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #F0A020;
+      font-family: 'SF Mono', 'Courier New', monospace;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .formula-card-body {
+      padding: 20px 26px 22px;
+    }
+    .formula-card-body p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .formula-card-body p:last-child { margin-bottom: 0; }
+    .formula-card-body p strong { color: #ffffff; }
+    .exam-tip {
+      background: rgba(240,160,32,0.07);
+      border: 1px solid rgba(240,160,32,0.15);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .exam-tip-label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 5px;
+    }
+    .exam-tip p {
+      font-size: 13px !important;
+      color: rgba(255,255,255,0.62) !important;
+      line-height: 1.65 !important;
+      margin: 0 !important;
+    }
+    .exam-tip p strong { color: rgba(255,255,255,0.85) !important; }
+
+    /* ── Source note ── */
+    .source-note {
+      font-size: 12px !important;
+      color: rgba(255,255,255,0.28) !important;
+      margin-top: 20px !important;
+      margin-bottom: 0 !important;
+    }
+    .source-note a { color: rgba(255,255,255,0.40) !important; }
+
+    /* ── Bear CTA ── */
+    .bear-cta {
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      padding: 64px 32px;
+    }
+    .bear-cta img { width: 100px; margin-bottom: 20px; }
+    .bear-cta h2 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .bear-cta p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.58);
+      max-width: 500px;
+      margin: 0 auto 28px;
+      line-height: 1.65;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #F0A020;
+      color: #1A1A2E;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #e09010; }
+    .hero-note {
+      font-size: 13px !important;
+      color: rgba(255,255,255,0.30) !important;
+      margin-top: 14px !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 32px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.80); }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+    @media (max-width: 600px) {
+      nav { padding: 12px 20px; }
+      .nav-links a:not(.nav-download) { display: none; }
+      .stat-callout { gap: 0; padding: 28px 16px; }
+      .big-stat { padding: 0 12px; }
+      .article-body { padding: 48px 20px 64px; }
+      .formula-card-header { flex-direction: column; gap: 12px; }
+      .formula-chip { white-space: normal; }
+    }
+  
+
+    /* question cards */
+    .q-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 16px;
+      padding: 24px 26px;
+      margin: 20px 0;
+    }
+    .q-topic {
+      display: inline-block;
+      font-size: 10px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase;
+      color: #F0A020; background: rgba(240,160,32,0.10);
+      border: 1px solid rgba(240,160,32,0.22);
+      border-radius: 20px; padding: 4px 12px; margin-bottom: 14px;
+    }
+    .q-text { font-size: 16.5px; font-weight: 700; color: #ffffff; line-height: 1.55; margin-bottom: 16px; }
+    .q-options { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+    .q-options li {
+      font-size: 15px; color: rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px; padding: 11px 16px; line-height: 1.5;
+    }
+    .q-options li strong { color: #F0A020; margin-right: 6px; }
+    .q-card details summary {
+      cursor: pointer; font-size: 14px; font-weight: 800; color: #F0A020;
+      list-style: none; user-select: none;
+    }
+    .q-card details summary::before { content: "▸ "; }
+    .q-card details[open] summary::before { content: "▾ "; }
+    .q-answer {
+      margin-top: 14px;
+      background: rgba(74,222,128,0.07);
+      border: 1px solid rgba(74,222,128,0.20);
+      border-radius: 12px; padding: 16px 18px;
+    }
+    .q-answer-label { font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #4ADE80; margin-bottom: 6px; }
+    .q-answer p { font-size: 14.5px; color: rgba(255,255,255,0.75); line-height: 1.65; margin: 0; }
+    .q-answer p strong { color: #ffffff; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="/">
+      <img class="nav-icon" src="icon.png" alt="CalPrep RE" />
+      <span class="nav-name">CalPrep <span>RE</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="guides.html">Study Guides</a>
+      <a href="support.html">Support</a>
+      <a href="https://apps.apple.com/us/app/calprep-re/id6763944279" class="nav-download" target="_blank">Download Free ↓</a>
+    </div>
+  </nav>
+
+  <!-- Article Hero -->
+  <div class="article-hero">
+    <div class="article-hero-content">
+      <div class="article-eyebrow">Practice Questions · All 7 Topics</div>
+      <h1>Free California Real Estate<br /><span>Practice Questions</span></h1>
+      <p class="article-hero-sub">20 exam-style questions with answers and explanations — pulled from the same bank CalPrep RE uses. No email, no signup, answers hidden until you commit.</p>
+      <div class="hero-meta">California DRE Salesperson Exam · Updated July 2026</div>
+    </div>
+  </div>
+
+  <!-- Stat Bar -->
+  <div class="stat-callout">
+    <div class="big-stat">
+      <div class="big-stat-value">20</div>
+      <div class="big-stat-label">Exam-style questions below</div>
+    </div>
+    <div class="big-stat">
+      <div class="big-stat-value">7</div>
+      <div class="big-stat-label">DRE topic areas covered</div>
+    </div>
+    <div class="big-stat">
+      <div class="big-stat-value">0</div>
+      <div class="big-stat-label">Signups or emails required</div>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <div class="article-body">
+    <div class="prose">
+
+      <div class="answer-banner">
+        <div class="answer-banner-icon">✍️</div>
+        <div class="answer-banner-text">
+          <div class="answer-banner-label">How to Use This Page</div>
+          <div class="answer-banner-body"><strong>Commit to an answer before you peek.</strong> The value isn't in reading questions — it's in the moment you have to choose. Pick your letter, then open the explanation. If you guessed right for the wrong reason, that counts as a miss.</div>
+        </div>
+      </div>
+
+      <p>These 20 questions mirror the real California exam's style: scenario-based, four options, one defensibly correct answer. They span all seven DRE topic areas, weighted roughly like the exam itself.</p>
+    </div>
+
+    <div class="q-card">
+      <div class="q-topic">Question 1 · DRE Licensing</div>
+      <div class="q-text">A salesperson's license becomes inactive when:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> The salesperson moves to another county</li>
+        <li><strong>B.</strong> The broker-salesperson relationship ends</li>
+        <li><strong>C.</strong> The salesperson joins a team</li>
+        <li><strong>D.</strong> The salesperson takes a vacation longer than 30 days</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>A salesperson's license is tied to their employing broker. When that relationship ends, the license becomes inactive until a new broker sponsors them.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 2 · DRE Licensing</div>
+      <div class="q-text">Before a claimant can collect from the Recovery Fund, they must first:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> File a complaint with the DRE</li>
+        <li><strong>B.</strong> Obtain and attempt to collect a civil court judgment against the licensee</li>
+        <li><strong>C.</strong> Prove the licensee was criminally convicted</li>
+        <li><strong>D.</strong> Wait for the DRE to complete its own investigation</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>To collect from the Recovery Fund, the claimant must first obtain a civil judgment against the licensee and demonstrate they have been unable to collect the judgment.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 3 · DRE Licensing</div>
+      <div class="q-text">What is the minimum passing score on the California salesperson license examination?</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> 70%</li>
+        <li><strong>B.</strong> 65%</li>
+        <li><strong>C.</strong> 75%</li>
+        <li><strong>D.</strong> 80%</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: A</div>
+          <p>The minimum passing score on the California salesperson exam is 70%.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 4 · Agency Law</div>
+      <div class="q-text">"Negligent misrepresentation" means:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> An intentional lie about a property</li>
+        <li><strong>B.</strong> Making a false statement without reasonable grounds for believing it true</li>
+        <li><strong>C.</strong> An honest mistake with reasonable grounds</li>
+        <li><strong>D.</strong> Failing to inspect the property</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>Negligent misrepresentation is making a false statement carelessly — without verifying its truth — as opposed to intentional fraud.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 5 · Agency Law</div>
+      <div class="q-text">Under California law, the agency disclosure form must be provided to a buyer:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> At the time the listing agreement is signed</li>
+        <li><strong>B.</strong> Only when dual agency is involved</li>
+        <li><strong>C.</strong> As soon as practicable before signing a purchase agreement</li>
+        <li><strong>D.</strong> At or before the close of escrow</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: C</div>
+          <p>California law requires the agency disclosure form to be provided 'as soon as practicable' before the buyer signs a purchase agreement or representation agreement.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 6 · Agency Law</div>
+      <div class="q-text">A listing agent is working with an unrepresented buyer. The agent proceeds without disclosing to the buyer that they represent only the seller. The agent has MOST likely violated:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> The duty of loyalty to the seller</li>
+        <li><strong>B.</strong> The duty of care to the buyer</li>
+        <li><strong>C.</strong> The agency disclosure requirement</li>
+        <li><strong>D.</strong> The seller's right to confidentiality</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: C</div>
+          <p>California law requires agents to disclose their agency relationship to all parties in a transaction. Failing to inform the buyer that the agent represents the seller is a violation of the agency disclosure requirement.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 7 · Contracts</div>
+      <div class="q-text">A release clause in real estate financing allows:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> A buyer to release themselves from the contract</li>
+        <li><strong>B.</strong> A portion of property to be freed from a blanket lien upon partial payment</li>
+        <li><strong>C.</strong> The escrow to release funds early</li>
+        <li><strong>D.</strong> A seller to cancel the listing</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>Common in subdivision financing, a release clause lets a developer pay off a portion of a blanket loan to get individual lots released for sale.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 8 · Contracts</div>
+      <div class="q-text">A "release clause" in a blanket mortgage allows:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> The lender to release the borrower from personal liability</li>
+        <li><strong>B.</strong> Individual parcels to be released from the lien when a proportional amount is paid off</li>
+        <li><strong>C.</strong> The borrower to defer payments during hardship</li>
+        <li><strong>D.</strong> The lender to release the rate lock early</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>A release clause in a blanket mortgage (covering multiple parcels) allows individual parcels to be sold and released from the lien once the borrower pays a specified portion of the debt.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 9 · Contracts</div>
+      <div class="q-text">The Statute of Frauds in California requires which of the following to be in writing to be enforceable?</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> An agreement to pay a finder's fee to an unlicensed person</li>
+        <li><strong>B.</strong> A lease for any duration of one month or more</li>
+        <li><strong>C.</strong> An agreement for the purchase and sale of real property</li>
+        <li><strong>D.</strong> Any real estate contract that exceeds $500 in value</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: C</div>
+          <p>California's Statute of Frauds (Civil Code §1624) requires contracts for the purchase and sale of real property to be in writing and signed by the party to be charged.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 10 · Disclosures</div>
+      <div class="q-text">An airport influence area disclosure is required because:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> The FAA mandates it in all transactions</li>
+        <li><strong>B.</strong> The property may be affected by aircraft noise, safety zones, or use restrictions</li>
+        <li><strong>C.</strong> It determines the property's flood zone status</li>
+        <li><strong>D.</strong> Airport proximity is presumed to reduce market value</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>Properties within an airport influence area must be disclosed, as noise levels, property use, and the right to object to aircraft operations may be affected.</p>
+        </div>
+      </details>
+    </div>
+
+    <a class="related-guide" href="quiz.html">
+      <div class="related-guide-icon">🎯</div>
+      <div>
+        <div class="related-guide-label">Related Guide</div>
+        <div class="related-guide-title">Want a score and topic breakdown? Take the interactive 14-question diagnostic</div>
+      </div>
+      <div class="related-guide-arrow">→</div>
+    </a>
+
+    <div class="q-card">
+      <div class="q-topic">Question 11 · Disclosures</div>
+      <div class="q-text">Which of the following properties is EXEMPT from the Transfer Disclosure Statement requirement in California?</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> A single-family home with a known foundation issue</li>
+        <li><strong>B.</strong> A duplex being sold by an investor</li>
+        <li><strong>C.</strong> A transfer between spouses as part of a divorce settlement</li>
+        <li><strong>D.</strong> A home sold as-is with buyer acknowledgment</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: C</div>
+          <p>Transfers between spouses, certain foreclosure sales, probate sales, and other specified transactions are exempt from the TDS requirement. An as-is designation does not exempt a seller from completing the TDS.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 12 · Disclosures</div>
+      <div class="q-text">Which of the following is TRUE regarding California's requirement to disclose military ordnance locations?</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> Sellers must disclose only if the property is within 1 mile of a military base</li>
+        <li><strong>B.</strong> This disclosure is included in the Transfer Disclosure Statement</li>
+        <li><strong>C.</strong> Sellers must disclose if they have actual knowledge the property is within a mile of a former military ordnance site</li>
+        <li><strong>D.</strong> This disclosure is required only for commercial and industrial properties</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: C</div>
+          <p>California requires sellers to disclose if they have actual knowledge that the property is located within one mile of a former federal or state ordnance location. This is required due to the potential for unexploded ordnance.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 13 · Property Ownership</div>
+      <div class="q-text">"Encumbrance" is a general term for:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> Any improvement to the property</li>
+        <li><strong>B.</strong> Any claim, lien, charge, or liability attached to real property</li>
+        <li><strong>C.</strong> Any recorded document</li>
+        <li><strong>D.</strong> Any property tax assessment</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>Encumbrances include liens (mortgages, tax liens), easements, deed restrictions, and encroachments — anything that affects the owner's rights or the use of the property.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 14 · Property Ownership</div>
+      <div class="q-text">A property owner installs a built-in dishwasher connected to the home's plumbing. The dishwasher is MOST likely classified as:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> A fixture that becomes part of the real property</li>
+        <li><strong>B.</strong> Personal property that the seller may remove before closing</li>
+        <li><strong>C.</strong> A trade fixture that can be removed by the owner at any time</li>
+        <li><strong>D.</strong> A chattel that must be specifically excluded in the purchase agreement</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: A</div>
+          <p>An item permanently attached to a structure and connected to utilities — like a built-in dishwasher — is generally classified as a fixture and becomes part of the real property. It transfers with the home unless specifically excluded.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 15 · Property Ownership</div>
+      <div class="q-text">A city exercises eminent domain to acquire a commercial property for a public transit project. The owner disagrees with the city's valuation. Under California law, the owner is entitled to:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> Reject the taking entirely if the property is income-producing and the owner formally objects</li>
+        <li><strong>B.</strong> Compensation based on the property's assessed value for property tax purposes</li>
+        <li><strong>C.</strong> Just compensation based on the property's fair market value at the time of the taking</li>
+        <li><strong>D.</strong> Compensation equal to the property's replacement cost as determined by the city's appraiser</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: C</div>
+          <p>The Fifth Amendment and California law require just compensation defined as fair market value — what a willing buyer would pay a willing seller in an arm's-length transaction. Assessed value is often lower than market value and is not the legal standard. The owner cannot reject a valid eminent domain action but may challenge the amount in court.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 16 · Real Estate Finance</div>
+      <div class="q-text">A "release of lien" (reconveyance) is required when:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> A borrower requests refinancing</li>
+        <li><strong>B.</strong> A debt is paid off — the lienholder must record to clear title</li>
+        <li><strong>C.</strong> A property is sold at any price</li>
+        <li><strong>D.</strong> A new lender takes over the loan</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>When a lien is satisfied, the lienholder must record a release (for deeds of trust, this is called a reconveyance) to clear the title. Failure to do so is a violation in California.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 17 · Real Estate Finance</div>
+      <div class="q-text">The "index" in an adjustable-rate mortgage refers to:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> The lender's profit margin added to each payment</li>
+        <li><strong>B.</strong> A benchmark rate (e.g., SOFR) to which the lender's margin is added to determine the interest rate</li>
+        <li><strong>C.</strong> The length of the initial fixed-rate period</li>
+        <li><strong>D.</strong> The cap on the maximum annual rate increase</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>An ARM's rate is set by adding the lender's margin to a benchmark index (such as SOFR or the 1-year Treasury). When the index rises or falls, the loan rate adjusts accordingly at each adjustment period.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 18 · Real Estate Finance</div>
+      <div class="q-text">Fannie Mae and Freddie Mac are BEST described as:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> Federal agencies that originate loans for low-income borrowers</li>
+        <li><strong>B.</strong> Entities that insure conventional loans against default</li>
+        <li><strong>C.</strong> Private banks that originate and service all conforming loans</li>
+        <li><strong>D.</strong> Government-sponsored enterprises that purchase loans in the secondary market</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: D</div>
+          <p>Fannie Mae (FNMA) and Freddie Mac (FHLMC) are government-sponsored enterprises (GSEs) that buy conforming loans from lenders, package them as mortgage-backed securities, and sell them to investors — keeping money flowing through the mortgage market.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 19 · Fair Housing</div>
+      <div class="q-text">A "bona fide occupancy standard" allows landlords to:</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> Discriminate freely against large families</li>
+        <li><strong>B.</strong> Set reasonable occupancy limits based on property size and local codes</li>
+        <li><strong>C.</strong> Require all occupants to be on the lease</li>
+        <li><strong>D.</strong> Charge extra for every additional occupant</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>Landlords may set occupancy limits based on legitimate factors (square footage, local codes). "Two per bedroom" is generally reasonable, but such limits cannot be used to discriminate against families.</p>
+        </div>
+      </details>
+    </div>
+    <div class="q-card">
+      <div class="q-topic">Question 20 · Fair Housing</div>
+      <div class="q-text">In California, which state agency is responsible for investigating and enforcing housing discrimination complaints under FEHA?</div>
+      <ul class="q-options">
+        <li><strong>A.</strong> The California Department of Real Estate (DRE)</li>
+        <li><strong>B.</strong> The California Civil Rights Department (CRD), formerly the DFEH</li>
+        <li><strong>C.</strong> The California Attorney General's Office exclusively</li>
+        <li><strong>D.</strong> The California Housing Finance Agency (CalHFA)</li>
+      </ul>
+      <details>
+        <summary>Show answer &amp; explanation</summary>
+        <div class="q-answer">
+          <div class="q-answer-label">Answer: B</div>
+          <p>The California Civil Rights Department (CRD) — formerly the Department of Fair Employment and Housing (DFEH) — is the state agency charged with enforcing FEHA in housing matters. The DRE handles real estate licensee discipline separately.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="prose">
+      <div class="section-label">How Did You Do?</div>
+      <h2>The Real Exam Is 150 of These <span>in 3 Hours</span></h2>
+      <p>If you cruised through these, you're building real readiness — the exam pass line is 70%, so 14+ out of 20 here is the pace you want. If a topic kept tripping you, that's not bad news; that's your study plan writing itself.</p>
+      <p>And if you want the honest topic-by-topic verdict, the <a href="quiz.html">free diagnostic quiz</a> scores you across all seven areas in about three minutes.</p>
+    </div>
+  </div>
+
+  <!-- Bear CTA -->
+  <div class="bear-cta">
+    <img src="bear-waving.png" alt="CalPrep RE" />
+    <h2>1,900+ More Where These Came From 🐻</h2>
+    <p>Every CalPrep RE question is California-specific with a full explanation — plus practice exams, flashcards, and a timed 150-question simulation.</p>
+    <a class="btn-primary" href="https://apps.apple.com/us/app/calprep-re/id6763944279" target="_blank">
+      ⬇ Download CalPrep RE — Free
+    </a>
+    <p class="hero-note">Free to start · No credit card · iOS · Built for the CA DRE exam</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/#features">Features</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="quiz.html">Free Quiz</a>
+      <a href="guides.html">Study Guides</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://apps.apple.com/us/app/calprep-re/id6763944279" target="_blank">App Store</a>
+    </div>
+    <div class="footer-copy">© 2026 Ivy Wisner · CalPrep RE · California Real Estate Exam Prep</div>
+  </footer>
+
+</body>
+</html>
