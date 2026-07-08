@@ -544,9 +544,13 @@
       .stat-value { font-size: 22px; }
     }
 
-    /* ── Sale bar: "Sunset Hairline" — the sunset ribbon gradient as a 2px
-       top edge over a faint warm wash. Noticeable, never neon. Honest clock:
-       fixed end timestamp, same for every visitor, removes itself at zero. ── */
+    /* ── Sale bar: "Sunset Hairline, Crisp Frost fill" — the sunset ribbon
+       gradient as a 2px top edge over a pure neutral glass fill. The fill is
+       deliberately achromatic (Ivy's call, July 7): low-opacity gold over
+       navy blends to 70s sepia, so warmth lives ONLY in thin elements — the
+       hairline, the poppy label, the gold digits — where chroma survives.
+       Honest clock: fixed end timestamp, same for every visitor, removes
+       itself at zero. ── */
     .sale-bar {
       display: none; /* JS reveals it while a sale is active */
       justify-content: space-between;
@@ -554,7 +558,7 @@
       gap: 14px;
       flex-wrap: wrap;
       padding: 9px 26px;
-      background: linear-gradient(90deg, rgba(240,160,32,0.10), rgba(240,85,122,0.10));
+      background: rgba(255,255,255,0.045);
       border-top: 2px solid #F0A020;
       border-image: linear-gradient(90deg, #F0A020, #E87840, #F0557A) 1;
       border-bottom: 1px solid rgba(255,255,255,0.07);
