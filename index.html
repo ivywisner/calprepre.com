@@ -559,9 +559,11 @@
       flex-wrap: wrap;
       padding: 9px 26px;
       background: rgba(255,255,255,0.045);
+      /* matched 2px sunset hairlines top AND bottom — the border-image paints
+         both edges with the ribbon, framing the bar as one deliberate band */
       border-top: 2px solid #F0A020;
+      border-bottom: 2px solid #F0A020;
       border-image: linear-gradient(90deg, #F0A020, #E87840, #F0557A) 1;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
     }
     .sale-bar.active { display: flex; }
     .sale-label {
