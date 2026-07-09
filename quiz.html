@@ -678,7 +678,15 @@
       topicScores = {};
       Object.entries(BANK).forEach(([topicId, data]) => {
         const picked = shuffle(data.questions).slice(0, 2);
-        picked.forEach(q => questions.push({ ...q, topicId, topicLabel: data.label }));
+        picked.forEach(q => {
+          const order = shuffle(q.options.map((_, i) => i));
+          questions.push({
+            ...q,
+            options: order.map(i => q.options[i]),
+            correct: order.indexOf(q.correct),
+            topicId, topicLabel: data.label
+          });
+        });
         topicScores[topicId] = { label: data.label, correct: 0, total: 2 };
       });
       questions = shuffle(questions);
@@ -948,7 +956,7 @@
             countTimer = null;
             land();
           }
-        }, 90);
+        }, 40);
       }
     }
 
