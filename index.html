@@ -547,7 +547,13 @@
       border-radius: 14px;
       padding: 16px 18px;
       text-decoration: none;
-      transition: border-color 0.15s, transform 0.15s;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: transform 0.2s, border-color 0.15s, opacity 0.5s ease;
+    }
+    .strip-card.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     .strip-card:hover { border-color: rgba(240,160,32,0.35); transform: translateY(-2px); }
     .strip-icon { font-size: 22px; flex-shrink: 0; }
@@ -1120,6 +1126,19 @@
       });
     }, { threshold: 0.1 });
     tierCards.forEach(card => tierObserver.observe(card));
+
+    // Study guide cards — staggered float in
+    const stripCards = document.querySelectorAll('.strip-card');
+    const stripObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = Array.from(stripCards).indexOf(entry.target);
+          setTimeout(() => entry.target.classList.add('visible'), index * 150);
+          stripObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    stripCards.forEach(card => stripObserver.observe(card));
   </script>
 
   <script>
