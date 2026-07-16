@@ -600,6 +600,9 @@
       .stats-bar { gap: 0; padding: 20px 16px; }
       .stat { padding: 0 12px; }
       .stat-value { font-size: 22px; }
+      /* Guide cards fly in from the left on mobile (desktop keeps the float-up) */
+      .strip-card { transform: translateX(-36px); }
+      .strip-card.visible { transform: translateX(0); }
     }
     @media (max-width: 400px) {
       .dl-free { display: none; }
