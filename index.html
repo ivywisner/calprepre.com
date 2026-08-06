@@ -146,6 +146,51 @@
       box-shadow: 0 4px 20px rgba(240,160,32,0.4);
     }
     .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(240,160,32,0.5); }
+
+    /* ── Community section ── */
+    .community-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px;
+      padding: 28px;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: border-color 0.15s, opacity 0.6s ease, transform 0.6s ease;
+    }
+    .community-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .community-card:hover { border-color: rgba(240,160,32,0.35); }
+    .community-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #F0A020;
+      margin-bottom: 14px;
+    }
+    .community-text {
+      font-size: 15px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+    }
+    .community-text strong { color: #ffffff; }
+    .btn-community {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      background: #F0A020;
+      color: #1A1A2E;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 12px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .btn-community:hover { opacity: 0.85; }
     .btn-secondary {
       display: inline-flex;
       align-items: center;
@@ -1049,6 +1094,17 @@
     </div>
   </div>
 
+  <!-- Community -->
+  <section id="community">
+    <div class="section-label">Community</div>
+    <h2>You're Not Studying <span>Alone</span></h2>
+    <div class="community-card">
+      <div class="community-label">Facebook Study Group</div>
+      <p class="community-text">Join the <strong>Real Estate Exam Prep &amp; Study Group</strong> on Facebook &mdash; daily practice questions, exam-day recaps, and study support from candidates in every state, California included.</p>
+      <a class="btn-community" href="https://www.facebook.com/groups/realestateexamprepgroup/" target="_blank" rel="noopener">Join the Facebook Group →</a>
+    </div>
+  </section>
+
   <!-- Study Guides strip -->
   <section id="study-guides">
     <div class="section-label">Free Study Guides</div>
@@ -1142,6 +1198,17 @@
       });
     }, { threshold: 0.1 });
     stripCards.forEach(card => stripObserver.observe(card));
+
+    const communityCards = document.querySelectorAll('.community-card');
+    const communityObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          communityObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    communityCards.forEach(card => communityObserver.observe(card));
   </script>
 
   <script>
