@@ -26,4 +26,4 @@ Facts on these pages are verified against primary sources (DRE / TREC / DBPR / P
 
 ## App
 
-- [CalPrep RE on the App Store](https://calprepre.com/): iOS app with 1,900+ state-specific practice questions, topic quizzes, flashcards, practice tests, and a full-length timed exam.
+- [CalPrep RE on the App Store](https://calprepre.com/): iOS app with 1,900+ state-specific practice questions, topic quizzes, flashcards, practice tests, and full-length timed practice exams.
